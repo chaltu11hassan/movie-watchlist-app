@@ -10,6 +10,10 @@
     grid-template-columns: 1fr 1fr 1fr; 
 }
 
+/* #topNav{
+    background-color: wheat;
+} */
+
 #text{
     text-align: center;
 }

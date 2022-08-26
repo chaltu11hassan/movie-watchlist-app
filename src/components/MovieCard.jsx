@@ -25,8 +25,9 @@ const MovieCard = (props) => {
           alt="#"
         />
         <h3>{movie.original_title}</h3>
+        {button}
       </div>
-      {button}
+     
     </div>
   );
 };

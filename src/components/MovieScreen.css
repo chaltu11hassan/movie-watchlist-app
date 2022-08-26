@@ -1,5 +1,15 @@
 .movie-container{
     border: solid white;
+    margin: 20px;
     padding: 30px;
-    display: grid;
+    border-radius: 5px;
+    align-content: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+#text{
+    text-align: center;
 }

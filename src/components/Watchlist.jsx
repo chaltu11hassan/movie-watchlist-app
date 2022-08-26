@@ -2,13 +2,15 @@ import React from "react";
 
 import MovieCard from "./MovieCard";
 
+import './Watchlist.css'
+
 const Watchlist = (props) => {
 
     const { list, removeMovie } = props 
 
     const movieDisplay = list.map((movie, index)=>{
         return(
-            <MovieCard movie={movie} removeMovie={removeMovie} list={list} />
+            <MovieCard key={index} movie={movie} removeMovie={removeMovie} list={list} />
         )
     })
 

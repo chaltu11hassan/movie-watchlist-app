@@ -2,6 +2,8 @@ import React from "react";
 
 import MovieCard from "./MovieCard";
 
+import './MovieScreen.css';
+
 const MovieScreen =(props)=>{
 
     const {movieList, addMovie, setPage, page, list, removeMovie} = props
@@ -17,7 +19,7 @@ const MovieScreen =(props)=>{
 
     const movieDisplay = movieList.map((movie, index)=>{
         return(
-            <MovieCard addMovie={addMovie} movie={movie} list={list} removeMovie={removeMovie} />
+            <MovieCard key={index} addMovie={addMovie} movie={movie} list={list} removeMovie={removeMovie} />
         )
     });
    
@@ -26,10 +28,10 @@ const MovieScreen =(props)=>{
             <h1>Chaltu's Movie Theatre</h1>
             <h3>Add a movie to your watchlist!</h3>
             <div className="btn-container">
-                <button onClick={page !== 1 && decrement} >Previous</button>
-                <button onClick={increment} >Next</button>
+                <button onClick={page !== 1 && decrement}>Previous</button>
+                <button onClick={increment}>Next</button>
             </div>
-            <div className="movie-container ">
+            <div className="movie-container">
            {movieDisplay}
             </div>
         </div>

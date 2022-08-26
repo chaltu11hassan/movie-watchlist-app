@@ -1,0 +1,10 @@
+.movie-card{
+    align-items: center;
+    padding: 10px;
+}
+
+img{
+    max-width: 20%;
+    border: solid black;
+    border-radius: 5px;
+}
